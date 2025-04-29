@@ -6,7 +6,7 @@ This project generates reports recommending web product development strategies f
 
 1.  **Clone the repository:**
     ```bash
-    # Replace <repository_url> with the actual URL if different
+    
     git clone https://github.com/NilsKakoseos/telia_scenario_planner_researcher.git
     cd telia_scenario_planner_researcher
     ```
