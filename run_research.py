@@ -23,24 +23,21 @@ load_dotenv()
 
 # --- Detailed Scenario Descriptions --- 
 SCENARIOS = {
-    "Scenario 1: Blue - US-Dominated Global Monopoly": """
-    - Global, deregulated US-based corporate monopoly
-    Title: Us-dominated global monopoly of cutting edge AI continuing along current trends with strong competition between a few large US-based corporations driving innovation (pretty much a projection on the current status quo of AI within the world, projecting these existing visible trends)
+    "Scenario 1: Blue - US-Led Global AI Platforms": """
+    Title: Continued US Tech Dominance Shaping Global AI & Web
+    Description: A future largely reflecting current trends, where a handful of large US-based technology corporations continue to dominate cutting-edge AI development and deployment globally. Innovation is driven by intense competition between these players within a relatively deregulated international environment. This leads to a largely centralized web architecture, standardized AI platforms, and widespread adoption of US-developed services, potentially creating challenges for regional players and digital sovereignty.
     """,
-    "Scenario 2: Green - Globally Regulated AI for Scientific Progress": """
-    Title: AI regulated towards scientific progress to solve global issues
-    - Global, regulated, centralised at local regulatory levels (e.g. at EU, eurasia, US, latin america)
-    On a global central level is determined to allocate AI-compute towards solving the most impactful scientific challenges of the world, including energy-production, combatting climate disruption and providing strong secure models of risk-prediction and mitigation concerning extreme weather events, extreme economic events, extreme war events etc etc. All digital services will be tracked in detail and carbon-footprints measured all the way from energy production, AI-hardware components production including mining of minerals and materials, all the way to the digital products utilising this underlying compute infrastructure in serving their customer basis in markets, which are also evaluated on detailed carbon-emission standards within the globally regulated regulatory framework for AI.
+    "Scenario 2: Green - Globally Coordinated AI for Societal Good": """
+    Title: Regulated AI Focused on Global Challenges & Sustainability
+    Description: A scenario characterized by significant international cooperation and regulatory frameworks (e.g., coordinated by bodies like the UN, EU, regional blocs) guiding AI development towards addressing major global issues like climate change, health, and sustainable development. The web landscape evolves with strong emphasis on ethical AI, data privacy, transparency, and measurable sustainability (e.g., carbon footprint tracking for digital services). Innovation in consumer-facing AI might be moderated by stricter compliance and ethical review processes.
     """,
-    "Scenario 3: Yellow - De-globalised, Heavily Regulated AI": """
-    - local (on EU-level, de-globalised world), regulated,
-    Title: Centralised and heavily regulated AI in a de-globalised world.
-    European stake holders will rely heavily on tight regulations on the EU-level heavily regulating all digital AI service providers. There will be usage-limits on AI-compute for individual users. A strong fear of AI technology regulates the usage of AI in digital products both on a (decentralised, local) legal level and on the level of customer demands.
+    "Scenario 3: Yellow - Fragmented & Regionally Regulated AI": """
+    Title: De-globalized Web with Strict Regional AI Governance
+    Description: A future marked by increased digital fragmentation and de-globalization. Strong regional blocs (like the EU) implement comprehensive AI regulations driven by concerns over data sovereignty, security, and societal impact. This leads to data localization requirements, significant compliance overhead for businesses operating across regions, and potentially divergent web ecosystems. Public caution and regulatory hurdles may slow down the adoption of cutting-edge AI applications in some sectors.
     """,
-    "Scenario 4: Red - Decentralised Acceleration Towards AGI": """
-    - deregulated, decentralised, global
-    Title: Decentralised global acceleration towards AGI within 2 years
-    - Decentralized open-source together with big corporate players drives the innovation towards sci-fi level exponential progress to AGI within 2 years. The web continuously builds itself with new builds continuously deployed and updated to ever-new multimodal interfaces and digital touchpoints quickly specialised and personalised to corporate business and customer needs. A small globally decentralized elite of individuals and few-person companies with access to AI technology have unbounded opportunity to shape the digital world. At the same time, AI-systems becomes increasingly autonomous, and we are starting to actually see some signs of strong competitions in digital markets for autonomous AI-systems with no clear human stakeholder involved. This will heavily reshape the web landscape, and products are radically quicker iterated and deployed. At the same time the whole web infrastructure is rapidly changing on a lower physical level to support the rapidly evolving needs of the web, and is merging with IOT and physical infrastructure streamlined to local business needs around the world. There is a battle between this decentralised trend and the powerful cloud-based monopolies still existing and growing even stronger on their big monopolies of datastreams and high-fidelity AI-models. Out of this conflict between centralised global cloud providers and rapidly evolving local decentralised and partly autonomous AI-products is shaping the landscape of the world wide web and the world more broadly, towards artificial super intelligence. Will it be one giant AI, or a collectively super-intelligent ecology of trillions of specialised swarms of and individual AIs with beyond-human super powers to drive the evolution of the world?
+    "Scenario 4: Red - Decentralized & Accelerated AI Disruption": """
+    Title: Rapid, Decentralized AI Evolution Reshaping the Web
+    Description: A scenario defined by explosive, decentralized AI innovation fueled by both powerful open-source models/communities and highly competitive corporate R&D in a minimally regulated global environment. Key characteristics include the rapid proliferation of specialized and autonomous AI agents, faster development cycles, the emergence of novel multimodal interfaces, and hyper-personalized web experiences. The web infrastructure itself adapts quickly, integrating more with edge computing and IoT. This creates tension between established centralized platforms and agile, decentralized actors, leading to a dynamic, perhaps chaotic, evolution towards highly autonomous systems and a fundamentally transformed web landscape.
     """
 }
 
@@ -179,10 +176,10 @@ async def main():
     os.makedirs(output_dir, exist_ok=True)
 
     # Determine which scenario to run (can be made dynamic, e.g., via command-line args)
-    scenario_topic = "Scenario 1: Blue - US-Dominated Global Monopoly"
-    # scenario_topic = "Scenario 2: Green - Globally Regulated AI for Scientific Progress"
-    #scenario_topic = "Scenario 3: Yellow - De-globalised, Heavily Regulated AI"
-    # scenario_topic = "Scenario 4: Red - Decentralised Acceleration Towards AGI"
+    scenario_topic = "Scenario 1: Blue - US-Led Global AI Platforms"
+    # scenario_topic = "Scenario 2: Green - Globally Coordinated AI for Societal Good"
+    #scenario_topic = "Scenario 3: Yellow - Fragmented & Regionally Regulated AI"
+    # scenario_topic = "Scenario 4: Red - Decentralized & Accelerated AI Disruption"
     
     # Get the corresponding detailed description
     scenario_details = SCENARIOS.get(scenario_topic)
