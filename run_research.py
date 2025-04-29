@@ -179,10 +179,10 @@ async def main():
     os.makedirs(output_dir, exist_ok=True)
 
     # Determine which scenario to run (can be made dynamic, e.g., via command-line args)
-    # scenario_topic = "Scenario 1: Blue - US-Dominated Global Monopoly"
+    scenario_topic = "Scenario 1: Blue - US-Dominated Global Monopoly"
     # scenario_topic = "Scenario 2: Green - Globally Regulated AI for Scientific Progress"
     #scenario_topic = "Scenario 3: Yellow - De-globalised, Heavily Regulated AI"
-    scenario_topic = "Scenario 4: Red - Decentralised Acceleration Towards AGI"
+    # scenario_topic = "Scenario 4: Red - Decentralised Acceleration Towards AGI"
     
     # Get the corresponding detailed description
     scenario_details = SCENARIOS.get(scenario_topic)
