@@ -41,11 +41,11 @@ This project generates reports recommending web product development strategies f
     ```
 
 4.  **Configure API Keys:**
-    The report generation relies on external APIs (Language Models, Search Tools). Configure your keys by copying the example environment file and editing it:
+    The report generation relies on OpenAI and Tavily. Configure your keys by copying the example environment file and editing it:
     ```bash
     cp .env.example .env
     ```
-    Open the `.env` file in your editor and fill in the required API keys (e.g., `ANTHROPIC_API_KEY`, `TAVILY_API_KEY`, `PERPLEXITY_API_KEY`, `GOOGLE_API_KEY`, `GOOGLE_CSE_ID`, etc.). Refer to the "Search Tools" section below and the documentation of the specific services for details on obtaining keys. Ensure the `.env` file is kept secure and not committed to version control.
+    Open the `.env` file in your editor and fill in the required API keys`TAVILY_API_KEY`, `OPENAI_API_KEY`.
 
 ## Running the Report Generator
 
